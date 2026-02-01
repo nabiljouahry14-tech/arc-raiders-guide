@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARC Enemies - ARC Raiders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>ARC<span>RAIDERS</span></h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weapons.html">Weapons</a></li>
+                <li><a href="arcs.html" class="active">ARCs</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="loot.html">Loot & Crafting</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="guide.html">Guide</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header arcs-header">
+        <div class="page-overlay"></div>
+        <div class="container">
+            <h1>ARC Enemies Database</h1>
+            <p>Know your enemy. The mechanized threat explained.</p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="arcs-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>The ARC Threat</h2>
+                <p>The ARCs are mysterious mechanized entities that ravage the Earth's surface. These machines come in various forms, each with unique abilities and threat levels. Understanding their patterns, weaknesses, and tactics is essential for survival.</p>
+                <div class="threat-levels">
+                    <div class="threat-item">
+                        <span class="threat-badge low">Low</span>
+                        <p>Minor threat, can be handled solo</p>
+                    </div>
+                    <div class="threat-item">
+                        <span class="threat-badge medium">Medium</span>
+                        <p>Moderate threat, team recommended</p>
+                    </div>
+                    <div class="threat-item">
+                        <span class="threat-badge high">High</span>
+                        <p>Severe threat, full squad required</p>
+                    </div>
+                    <div class="threat-item">
+                        <span class="threat-badge extreme">Extreme</span>
+                        <p>Deadly threat, avoid if possible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARCs Grid -->
+    <section class="arcs-section">
+        <div class="container">
+            <!-- S-Tier ARCs -->
+            <div class="arc-category">
+                <h2 class="category-title"><i class="fas fa-crown"></i> S-Tier - Elite Threats</h2>
+                <div class="arcs-grid">
+                    <div class="arc-card" data-threat="extreme">
+                        <div class="arc-header">
+                            <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2025/11/leaper-arc-raiders.png?q=49&fit=crop&w=825&dpr=2" alt="Bison ARC" loading="lazy">
+                            <span class="threat-badge extreme">Extreme Threat</span>
+                        </div>
+                        <h3>Bison</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Maximum</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Medium</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Extreme</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Massive heavily-armored quadruped ARC with devastating area attacks. One of the most dangerous ARCs encountered.</p>
+                            <p><strong>Weaknesses:</strong> Exposed power core after charge attacks, vulnerable legs during recovery phase</p>
+                            <p><strong>Tactics:</strong> Full squad essential. Dodge charge attacks, target legs to stagger, focus fire on core when exposed.</p>
+                            <p><strong>Loot:</strong> Legendary components, heavy plating, epic weapons</p>
+                        </div>
+                    </div>
+
+                    <div class="arc-card" data-threat="extreme">
+                        <div class="arc-header">
+                            <img src="https://unhbvkszwhczbjxgetgk.supabase.co/storage/v1/object/public/images/arc-raiders/images/queen_image.jpg" alt="The Queen ARC" loading="lazy">
+                            <span class="threat-badge extreme">Extreme Threat</span>
+                        </div>
+                        <h3>The Queen</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Very Heavy</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Fast</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Extreme</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Aerial superiority ARC with advanced mobility and devastating ranged attacks. Commands battlefield from above.</p>
+                            <p><strong>Weaknesses:</strong> Energy vents when hovering, vulnerable during landing sequences</p>
+                            <p><strong>Tactics:</strong> Use high ground. Bring anti-air weapons. Coordinate attacks when it lands to recharge.</p>
+                            <p><strong>Loot:</strong> Flight systems, rare energy cells, legendary materials</p>
+                        </div>
+                    </div>
+
+                    <div class="arc-card" data-threat="extreme">
+                        <div class="arc-header">
+                            <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2025/12/arc-raiders-best-rocketeer-driver-out-of-shadows-quest-game-rant-1.jpg" alt="Rocketeer ARC" loading="lazy">
+                            <span class="threat-badge extreme">Extreme Threat</span>
+                        </div>
+                        <h3>Rocketeer</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Heavy</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Medium</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Extreme</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Long-range artillery ARC equipped with devastating rocket barrages. Provides fire support from a distance.</p>
+                            <p><strong>Weaknesses:</strong> Long reload times, exposed missile pods, weak armor on sides</p>
+                            <p><strong>Tactics:</strong> Close distance quickly. Use cover from rocket barrages. Attack during reload phases.</p>
+                            <p><strong>Loot:</strong> Explosive components, targeting systems, advanced electronics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- A-Tier ARCs -->
+            <div class="arc-category">
+                <h2 class="category-title"><i class="fas fa-star"></i> A-Tier - Advanced Units</h2>
+                <div class="arcs-grid">
+                    <div class="arc-card" data-threat="high">
+                        <div class="arc-header">
+                            <img src="https://arcraiders.wiki/w/images/thumb/4/47/ARC_Bastion.png/1200px-ARC_Bastion.png.webp" alt="Bastion ARC" loading="lazy">
+                            <span class="threat-badge high">High Threat</span>
+                        </div>
+                        <h3>Bastion</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Very Heavy</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Slow</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: High</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Defensive fortress ARC with deployable shields and suppressive fire capabilities. Acts as mobile cover for other ARCs.</p>
+                            <p><strong>Weaknesses:</strong> Rear armor plates, overheats shield generators, slow rotation speed</p>
+                            <p><strong>Tactics:</strong> Flank from behind. Use EMP to disable shields. Focus fire when shield is down.</p>
+                            <p><strong>Loot:</strong> Shield generators, heavy plating, defensive systems</p>
+                        </div>
+                    </div>
+
+                    <div class="arc-card" data-threat="high">
+                        <div class="arc-header">
+                            <img src="https://arcraiders.wiki/w/images/thumb/2/26/ARC_Fireball.png/1200px-ARC_Fireball.png.webp" alt="Fireball ARC" loading="lazy">
+                            <span class="threat-badge high">High Threat</span>
+                        </div>
+                        <h3>Fireball</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Medium</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Fast</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Very High</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Incendiary specialist ARC that deploys fire-based area denial. Creates hazardous zones that damage over time.</p>
+                            <p><strong>Weaknesses:</strong> Exposed fuel tanks, vulnerable to explosions, combustible when damaged</p>
+                            <p><strong>Tactics:</strong> Engage from range. Target fuel tanks for chain explosions. Avoid close quarters.</p>
+                            <p><strong>Loot:</strong> Incendiary components, thermal systems, fire-resistant materials</p>
+                        </div>
+                    </div>
+
+                    <div class="arc-card" data-threat="high">
+                        <div class="arc-header">
+                            <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/arc-raiders/0/05/Wasp_2.jpg" alt="Wasp ARC" loading="lazy">
+                            <span class="threat-badge high">High Threat</span>
+                        </div>
+                        <h3>Wasp</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Light</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Very Fast</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Medium</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Fast aerial scout that harasses from above with hit-and-run attacks. Highly mobile and difficult to track.</p>
+                            <p><strong>Weaknesses:</strong> Low armor, predictable flight patterns, vulnerable during attack dives</p>
+                            <p><strong>Tactics:</strong> Lead shots for moving targets. Use automatic weapons. Take cover during dive attacks.</p>
+                            <p><strong>Loot:</strong> Flight components, sensors, lightweight alloys</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B-Tier ARCs -->
+            <div class="arc-category">
+                <h2 class="category-title"><i class="fas fa-medal"></i> B-Tier - Standard Units</h2>
+                <div class="arcs-grid">
+                    <div class="arc-card" data-threat="medium">
+                        <div class="arc-header">
+                            <img src="https://unhbvkszwhczbjxgetgk.supabase.co/storage/v1/object/public/images/arc-raiders/images/sentinel.webp" alt="Sentinel ARC" loading="lazy">
+                            <span class="threat-badge medium">Medium Threat</span>
+                        </div>
+                        <h3>Sentinel</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Heavy</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Slow</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Medium</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Static defensive ARC with long-range scanning and area suppression. Guards key locations and routes.</p>
+                            <p><strong>Weaknesses:</strong> Limited mobility, blind spots at close range, exposed sensors</p>
+                            <p><strong>Tactics:</strong> Approach from flanks. Use stealth to avoid detection. Disable sensors first.</p>
+                            <p><strong>Loot:</strong> Surveillance equipment, sensor arrays, targeting systems</p>
+                        </div>
+                    </div>
+
+                    <div class="arc-card" data-threat="medium">
+                        <div class="arc-header">
+                            <img src="https://arcraiders.wiki/w/images/thumb/e/e0/Hornet_Codex.png/800px-Hornet_Codex.png.webp" alt="Hornet ARC" loading="lazy">
+                            <span class="threat-badge medium">Medium Threat</span>
+                        </div>
+                        <h3>Hornet</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Light</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Fast</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Medium</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Swarm-type aerial drone that attacks in coordinated groups. Individually weak but deadly in numbers.</p>
+                            <p><strong>Weaknesses:</strong> Fragile armor, loses coordination when separated, vulnerable to AOE</p>
+                            <p><strong>Tactics:</strong> Use area damage weapons. Prioritize swarm reduction. Keep moving to avoid encirclement.</p>
+                            <p><strong>Loot:</strong> Drone components, small electronics, scrap materials</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C-Tier ARCs -->
+            <div class="arc-category">
+                <h2 class="category-title"><i class="fas fa-shield-alt"></i> C-Tier - Common Units</h2>
+                <div class="arcs-grid">
+                    <div class="arc-card" data-threat="low">
+                        <div class="arc-header">
+                            <img src="https://arcraiders.wiki/w/images/thumb/1/17/ARC_Tick.png/1200px-ARC_Tick.png.webp" alt="Tick ARC" loading="lazy">
+                            <span class="threat-badge low">Low Threat</span>
+                        </div>
+                        <h3>Tick</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Light</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Fast</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Low</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Small spider-like scout ARC that detects and marks Raiders. Alerts nearby ARCs to presence.</p>
+                            <p><strong>Weaknesses:</strong> Minimal armor, fragile legs, low health pool</p>
+                            <p><strong>Tactics:</strong> Eliminate quickly and quietly. Use melee or suppressed weapons. Prevent alerting other ARCs.</p>
+                            <p><strong>Loot:</strong> Sensors, light materials, basic components</p>
+                        </div>
+                    </div>
+
+                    <div class="arc-card" data-threat="low">
+                        <div class="arc-header">
+                            <img src="https://unhbvkszwhczbjxgetgk.supabase.co/storage/v1/object/public/images/arc-raiders/images/rollbot.webp" alt="Rollbot ARC" loading="lazy">
+                            <span class="threat-badge low">Low Threat</span>
+                        </div>
+                        <h3>Rollbot</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Medium</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Medium</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Low</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Spherical rolling ARC used for reconnaissance and light patrol. Can quickly traverse terrain.</p>
+                            <p><strong>Weaknesses:</strong> Exposed core when stationary, predictable rolling patterns, vulnerable to EMPs</p>
+                            <p><strong>Tactics:</strong> Attack when stationary. Use obstacles to block movement. Easy target for most weapons.</p>
+                            <p><strong>Loot:</strong> Mobility components, gyroscopes, scrap metal</p>
+                        </div>
+                    </div>
+
+                    <div class="arc-card" data-threat="medium">
+                        <div class="arc-header">
+                            <img src="https://arcraiders.wiki/w/images/thumb/f/ff/ARC_Pop.png/1200px-ARC_Pop.png.webp" alt="Pop ARC" loading="lazy">
+                            <span class="threat-badge medium">Medium Threat</span>
+                        </div>
+                        <h3>Pop</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Light</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Fast</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Medium</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Explosive kamikaze ARC that rushes targets and detonates. Dangerous in groups.</p>
+                            <p><strong>Weaknesses:</strong> Explodes when destroyed, predictable charge pattern, fragile</p>
+                            <p><strong>Tactics:</strong> Destroy from distance. Use explosive chain reactions. Never let them get close.</p>
+                            <p><strong>Loot:</strong> Explosive materials, detonators, volatile compounds</p>
+                        </div>
+                    </div>
+
+                    <div class="arc-card" data-threat="low">
+                        <div class="arc-header">
+                            <img src="https://unhbvkszwhczbjxgetgk.supabase.co/storage/v1/object/public/images/arc-raiders/images/snitch.webp" alt="Snitch ARC" loading="lazy">
+                            <span class="threat-badge low">Low Threat</span>
+                        </div>
+                        <h3>Snitch</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Minimal</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Fast</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: None</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Non-combat surveillance drone that broadcasts Raider locations. Priority elimination target.</p>
+                            <p><strong>Weaknesses:</strong> Zero offensive capability, extremely fragile, slow reaction time</p>
+                            <p><strong>Tactics:</strong> Destroy immediately on sight. One shot kill. Critical to maintain stealth.</p>
+                            <p><strong>Loot:</strong> Surveillance tech, communication modules, signal equipment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- D-Tier ARCs -->
+            <div class="arc-category">
+                <h2 class="category-title"><i class="fas fa-level-down-alt"></i> D-Tier - Basic Units</h2>
+                <div class="arcs-grid">
+                    <div class="arc-card" data-threat="low">
+                        <div class="arc-header">
+                            <img src="https://unhbvkszwhczbjxgetgk.supabase.co/storage/v1/object/public/images/arc-raiders/images/turret.webp" alt="Turret ARC" loading="lazy">
+                            <span class="threat-badge low">Low Threat</span>
+                        </div>
+                        <h3>Turret</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Medium</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: None (Static)</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Low</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> Stationary defensive emplacement with limited range and field of view. Guards specific zones.</p>
+                            <p><strong>Weaknesses:</strong> Cannot move, limited rotation, exposed rear power source, blind spots</p>
+                            <p><strong>Tactics:</strong> Approach from dead angles. Destroy from cover. Easiest ARC to defeat with planning.</p>
+                            <p><strong>Loot:</strong> Basic components, ammunition, metal scrap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Boss Class -->
+            <div class="arc-category">
+                <h2 class="category-title"><i class="fas fa-skull-crossbones"></i> World Boss</h2>
+                <div class="arcs-grid">
+                    <div class="arc-card boss-card" data-threat="extreme">
+                        <div class="arc-header">
+                            <img src="https://arcraiders.wiki/w/images/thumb/4/49/ARC_Matriarch.png/1200px-ARC_Matriarch.png.webp" alt="Matriarch Boss" loading="lazy">
+                            <span class="threat-badge extreme">World Boss</span>
+                        </div>
+                        <h3>Matriarch</h3>
+                        <div class="arc-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Armor: Maximum</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Speed: Variable</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Damage: Catastrophic</span>
+                            </div>
+                        </div>
+                        <div class="arc-description">
+                            <p><strong>Description:</strong> The Matriarch is the ultimate ARC threat - a colossal biomechanical entity that serves as the supreme commander of all ARC forces. This massive spider-like boss features multiple weapon systems, armor plating, and the ability to summon reinforcements mid-combat. Encounters with the Matriarch are rare but represent the greatest challenge Raiders can face.</p>
+                            <p><strong>Weaknesses:</strong> Vulnerable leg joints after charge attacks, exposed power core during overcharge sequence, susceptible to coordinated heavy weapons fire, weak underbelly when stunned</p>
+                            <p><strong>Tactics:</strong> Minimum 6-8 player raid team required. Assign roles: damage dealers focus legs, support manages adds, heavy weapons target core. Use terrain for cover during artillery barrages. Coordinate burst damage during vulnerability windows. Bring EMP grenades to disrupt reinforcement calls. Stock up on anti-armor ammunition and repair kits.</p>
+                            <p><strong>Loot:</strong> Matriarch Core (unique material), Legendary weapon blueprints, Exotic armor pieces, Massive resource caches, Exclusive cosmetic items, Boss-specific mods and attachments</p>
+                            <p class="boss-note"><i class="fas fa-exclamation-triangle"></i> Spawns at designated world boss locations during timed events - requires extensive preparation and coordinated raid groups</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combat Tips -->
+    <section class="combat-tips">
+        <div class="container">
+            <h2>General Combat Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Target Weak Points</h3>
+                    <p>Always aim for exposed joints, vents, and optical sensors for maximum damage.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Team Coordination</h3>
+                    <p>Focus fire on single targets and communicate enemy positions constantly.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Use EMP Effectively</h3>
+                    <p>EMP weapons temporarily disable ARCs, creating critical opportunities.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-running"></i>
+                    <h3>Know When to Retreat</h3>
+                    <p>Extraction is more important than engagement. Live to fight another day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ARC<span>RAIDERS</span></h3>
+                    <p>Your ultimate guide to surviving the surface and mastering extraction.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="weapons.html">Weapons</a></li>
+                        <li><a href="arcs.html">ARCs</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                        <li><a href="guide.html">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="loot.html">Loot & Crafting</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="#">Tips & Tricks</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ARC Raiders Guide. Fan-made portfolio project by Nabil Jouarhy. All trademarks belong to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

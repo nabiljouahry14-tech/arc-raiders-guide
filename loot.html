@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loot & Crafting - ARC Raiders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>ARC<span>RAIDERS</span></h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weapons.html">Weapons</a></li>
+                <li><a href="arcs.html">ARCs</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="loot.html" class="active">Loot & Crafting</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="guide.html">Guide</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header loot-header">
+        <div class="page-overlay"></div>
+        <div class="container">
+            <h1>Loot & Crafting System</h1>
+            <p>Everything you need to know about resources and crafting</p>
+        </div>
+    </section>
+
+    <!-- Rarity System -->
+    <section class="rarity-system">
+        <div class="container">
+            <h2>Rarity Tiers</h2>
+            <p class="section-subtitle">Understanding loot quality and value</p>
+            <div class="rarity-grid">
+                <div class="rarity-card rarity-common">
+                    <div class="rarity-icon"><i class="fas fa-cube"></i></div>
+                    <h3>Common</h3>
+                    <p>Basic items found everywhere. Essential for early game progression.</p>
+                    <span class="drop-rate">Drop Rate: 60%</span>
+                </div>
+                <div class="rarity-card rarity-uncommon">
+                    <div class="rarity-icon"><i class="fas fa-cubes"></i></div>
+                    <h3>Uncommon</h3>
+                    <p>Improved quality with better stats. Common in mid-tier areas.</p>
+                    <span class="drop-rate">Drop Rate: 25%</span>
+                </div>
+                <div class="rarity-card rarity-rare">
+                    <div class="rarity-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Rare</h3>
+                    <p>High-quality items with special properties. Found in dangerous zones.</p>
+                    <span class="drop-rate">Drop Rate: 10%</span>
+                </div>
+                <div class="rarity-card rarity-epic">
+                    <div class="rarity-icon"><i class="fas fa-crown"></i></div>
+                    <h3>Epic</h3>
+                    <p>Superior items with unique abilities. Elite enemy drops.</p>
+                    <span class="drop-rate">Drop Rate: 4%</span>
+                </div>
+                <div class="rarity-card rarity-legendary">
+                    <div class="rarity-icon"><i class="fas fa-star"></i></div>
+                    <h3>Legendary</h3>
+                    <p>The best items in the game. Boss drops and special locations.</p>
+                    <span class="drop-rate">Drop Rate: 1%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Types -->
+    <section class="resources-section">
+        <div class="container">
+            <h2>Resource Categories</h2>
+            <div class="resource-tabs">
+                <button class="resource-tab active" data-type="materials">Materials</button>
+                <button class="resource-tab" data-type="components">Components</button>
+                <button class="resource-tab" data-type="consumables">Consumables</button>
+                <button class="resource-tab" data-type="special">Special Items</button>
+            </div>
+
+            <!-- Materials -->
+            <div class="resource-content active" data-content="materials">
+                <div class="items-grid">
+                    <div class="item-card">
+                        <span class="item-rarity common">Common</span>
+                        <div class="item-icon"><i class="fas fa-hammer"></i></div>
+                        <h3>Metal Parts</h3>
+                        <p class="item-desc">Essential basic crafting material</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Workshop station upgrades</li>
+                                <li>Basic weapon crafting</li>
+                                <li>Ammunition production</li>
+                                <li>Barricade kits</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> All containers, recycling items, Scrappy
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity common">Common</span>
+                        <div class="item-icon"><i class="fas fa-cube"></i></div>
+                        <h3>Plastic Parts</h3>
+                        <p class="item-desc">Basic material for crafting</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Weapon modifications</li>
+                                <li>Gear bench upgrades</li>
+                                <li>Light shields</li>
+                                <li>Augment crafting</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Loot containers, recycling, Scrappy
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity common">Common</span>
+                        <div class="item-icon"><i class="fas fa-flask"></i></div>
+                        <h3>Chemicals</h3>
+                        <p class="item-desc">Base material for explosives and consumables</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Grenade crafting</li>
+                                <li>Medical items</li>
+                                <li>Crude explosives</li>
+                                <li>Adrenaline shots</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Loot containers, Scrappy
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity common">Common</span>
+                        <div class="item-icon"><i class="fas fa-circle"></i></div>
+                        <h3>Rubber Parts</h3>
+                        <p class="item-desc">Flexible material for various items</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Gunsmith upgrades</li>
+                                <li>Augment crafting</li>
+                                <li>Grenade components</li>
+                                <li>Stock modifications</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> All loot, recycling, Scrappy
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity common">Common</span>
+                        <div class="item-icon"><i class="fas fa-tshirt"></i></div>
+                        <h3>Fabric</h3>
+                        <p class="item-desc">Textile material for equipment</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Bandage crafting</li>
+                                <li>Gear bench upgrades</li>
+                                <li>Herbal bandages</li>
+                                <li>Duct tape</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Loot containers, Scrappy
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>ARC Alloy</h3>
+                        <p class="item-desc">Refined ARC material</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Workshop station requirements</li>
+                                <li>ARC Circuitry crafting</li>
+                                <li>Advanced components</li>
+                                <li>High-tier crafting</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Recycling ARC components, loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-tape"></i></div>
+                        <h3>Duct Tape</h3>
+                        <p class="item-desc">Versatile repair material</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Weapon modification II</li>
+                                <li>Vertical grips</li>
+                                <li>Angled grips</li>
+                                <li>Stock modifications</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Topside containers, crafting (3× Fabric)
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-oil-can"></i></div>
+                        <h3>Oil</h3>
+                        <p class="item-desc">Lubricant and fuel component</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Synthesized fuel crafting</li>
+                                <li>Grenade components</li>
+                                <li>Explosive recipes</li>
+                                <li>Mechanical repairs</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Topside loot, crafting (3× Chemicals)
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Steel Spring</h3>
+                        <p class="item-desc">Mechanical component</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Magazine modifications</li>
+                                <li>Mod components</li>
+                                <li>Advanced crafting</li>
+                                <li>Weapon upgrades</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Topside loot, crafting (2× Metal Parts)
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-magnet"></i></div>
+                        <h3>Magnet</h3>
+                        <p class="item-desc">Electromagnetic component</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Augment Mk. 2 crafting</li>
+                                <li>Advanced equipment</li>
+                                <li>Tech upgrades</li>
+                                <li>Special modifications</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Topside loot, crafting (2× Metal Parts)
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-microchip"></i></div>
+                        <h3>Processor</h3>
+                        <p class="item-desc">Advanced computing component</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Augment Mk. 3 crafting</li>
+                                <li>Advanced modifications</li>
+                                <li>Electronic equipment</li>
+                                <li>High-tech items</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Topside loot, crafting (1× Plastic + 1× Wires)
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-broadcast-tower"></i></div>
+                        <h3>ARC Circuitry</h3>
+                        <p class="item-desc">High-tech ARC component</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Medium shield crafting</li>
+                                <li>Heavy shield components</li>
+                                <li>Power rod crafting</li>
+                                <li>Workshop upgrades (level 3)</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Topside loot, crafting (2× ARC Alloy)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Components -->
+            <div class="resource-content" data-content="components">
+                <div class="items-grid">
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-cog"></i></div>
+                        <h3>Electrical Components</h3>
+                        <p class="item-desc">Refined electronic parts</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Augment Mk. 2 crafting</li>
+                                <li>Utility station upgrades</li>
+                                <li>Surge shield recharger</li>
+                                <li>Advanced equipment</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Refiner (3× Plastic + 3× Rubber), loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-wrench"></i></div>
+                        <h3>Mechanical Components</h3>
+                        <p class="item-desc">Refined mechanical parts</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Weapon modifications II</li>
+                                <li>Gunsmith upgrades</li>
+                                <li>Mod components crafting</li>
+                                <li>Advanced gear</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Refiner (2× Rubber + 3× Metal), loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-scroll"></i></div>
+                        <h3>Durable Cloth</h3>
+                        <p class="item-desc">Reinforced fabric material</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Medical lab upgrades</li>
+                                <li>Sterilized bandages</li>
+                                <li>Advanced healing items</li>
+                                <li>Equipment repairs</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Refiner (6× Fabric), loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-bomb"></i></div>
+                        <h3>Crude Explosives</h3>
+                        <p class="item-desc">Basic explosive compound</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Grenade crafting</li>
+                                <li>Explosive compound</li>
+                                <li>Mine crafting</li>
+                                <li>Explosive station upgrades</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Refiner (3× Chemicals), loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-microchip"></i></div>
+                        <h3>Advanced Electrical Components</h3>
+                        <p class="item-desc">High-grade electronics</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Augment Mk. 3 crafting</li>
+                                <li>Gear bench level 3</li>
+                                <li>Power rod crafting</li>
+                                <li>Epic equipment</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Refiner level 2 (1× Electrical + 1× Wires), loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Advanced Mechanical Components</h3>
+                        <p class="item-desc">High-grade mechanical parts</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Gunsmith level 3</li>
+                                <li>Advanced weapon crafting</li>
+                                <li>Elite ARC components</li>
+                                <li>Workshop level 3 upgrades</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Refiner level 2 (1× Mechanical + 1× Steel Spring), loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Mod Components</h3>
+                        <p class="item-desc">Advanced modification parts</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Weapon modifications III</li>
+                                <li>Epic weapon mods</li>
+                                <li>Advanced attachments</li>
+                                <li>Legendary modifications</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Refiner level 2 (1× Mechanical + 1× Steel Spring), loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-radiation-alt"></i></div>
+                        <h3>Explosive Compound</h3>
+                        <p class="item-desc">Advanced explosive material</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Heavy grenades</li>
+                                <li>Explosive mines</li>
+                                <li>Advanced trap crafting</li>
+                                <li>Wolfpack grenade</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Refiner level 2 (2× Crude Explosives), loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-battery-full"></i></div>
+                        <h3>Power Rod</h3>
+                        <p class="item-desc">High-capacity power source</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Boss reactor recycling</li>
+                                <li>Snap hook crafting</li>
+                                <li>Advanced power systems</li>
+                                <li>Epic crafting recipes</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Refiner level 3 (1× Advanced Electrical + 1× ARC Circuitry)
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-magnet"></i></div>
+                        <h3>Magnetic Accelerator</h3>
+                        <p class="item-desc">Advanced propulsion component</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Boss reactor recycling</li>
+                                <li>High-end equipment</li>
+                                <li>Advanced weapon systems</li>
+                                <li>Epic crafting</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Refiner level 3 (1× Advanced Mechanical + 1× ARC Motion Core)
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity legendary">Legendary</span>
+                        <div class="item-icon"><i class="fas fa-atom"></i></div>
+                        <h3>Queen Reactor</h3>
+                        <p class="item-desc">Boss ARC reactor core</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Recycling into components</li>
+                                <li>High-value trading</li>
+                                <li>Legendary recipes</li>
+                                <li>Collection rewards</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> The Queen boss ARC
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity legendary">Legendary</span>
+                        <div class="item-icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Matriarch Reactor</h3>
+                        <p class="item-desc">Boss ARC reactor core</p>
+                        <div class="item-uses">
+                            <h4>Used For:</h4>
+                            <ul>
+                                <li>Recycling into components</li>
+                                <li>High-value trading</li>
+                                <li>Legendary recipes</li>
+                                <li>Collection rewards</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Matriarch boss ARC
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consumables -->
+            <div class="resource-content" data-content="consumables">
+                <div class="items-grid">
+                    <div class="item-card">
+                        <span class="item-rarity common">Common</span>
+                        <div class="item-icon"><i class="fas fa-medkit"></i></div>
+                        <h3>Bandage</h3>
+                        <p class="item-desc">Basic healing item</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Restores health over time</li>
+                                <li>Can be used while moving</li>
+                                <li>Stackable x5</li>
+                                <li>Craft: 2× Fabric</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Workbench level 1, Medical Lab level 1
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity common">Common</span>
+                        <div class="item-icon"><i class="fas fa-syringe"></i></div>
+                        <h3>Adrenaline Shot</h3>
+                        <p class="item-desc">Quick healing injection</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Instant HP restoration</li>
+                                <li>Quick use time</li>
+                                <li>Stackable x5</li>
+                                <li>Craft: 1× Chemicals + 1× Plastic</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Medical Lab level 1, loot containers
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Herbal Bandage</h3>
+                        <p class="item-desc">Enhanced natural healing</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Better HP restoration</li>
+                                <li>Uses natural resources</li>
+                                <li>Stackable x5</li>
+                                <li>Craft: 2× Assorted Seeds + 5× Fabric</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Medical Lab level 1, crafting
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Shield Recharger</h3>
+                        <p class="item-desc">Restores shield energy</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Recharges shield HP</li>
+                                <li>Essential for survival</li>
+                                <li>Stackable x5</li>
+                                <li>Craft: 4× Rubber Parts</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Workbench level 1, Medical Lab level 1
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-first-aid"></i></div>
+                        <h3>Sterilized Bandage</h3>
+                        <p class="item-desc">Medical-grade healing</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>High HP restoration</li>
+                                <li>Prevents infections</li>
+                                <li>Stackable x3</li>
+                                <li>Craft: 1× Antiseptic + 1× Fabric</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Medical Lab level 2, crafting
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Surge Shield Recharger</h3>
+                        <p class="item-desc">Advanced shield restoration</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Full shield recharge</li>
+                                <li>Faster recharge rate</li>
+                                <li>Stackable x5</li>
+                                <li>Craft: 1× Electrical Components</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Medical Lab level 2, crafting
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-briefcase-medical"></i></div>
+                        <h3>Vita Shot</h3>
+                        <p class="item-desc">Advanced medical injection</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Large instant heal</li>
+                                <li>Removes status effects</li>
+                                <li>Stackable x3</li>
+                                <li>Craft: 1× Syringe + 4× Chemicals</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Medical Lab level 3, crafting
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-spray-can"></i></div>
+                        <h3>Vita Spray</h3>
+                        <p class="item-desc">Elite healing compound</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Maximum HP restoration</li>
+                                <li>Area healing effect</li>
+                                <li>Stackable x1</li>
+                                <li>Craft: 1× Antiseptic + 2× Canister</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Medical Lab level 3, elite loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity common">Common</span>
+                        <div class="item-icon"><i class="fas fa-bomb"></i></div>
+                        <h3>Light Impact Grenade</h3>
+                        <p class="item-desc">Basic explosive</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Area damage</li>
+                                <li>Quick throw time</li>
+                                <li>Stackable x5</li>
+                                <li>Craft: 1× Chemicals + 1× Plastic</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Workbench level 1, Explosives Station level 1
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-fire"></i></div>
+                        <h3>Blaze Grenade</h3>
+                        <p class="item-desc">Incendiary explosive</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Fire damage over time</li>
+                                <li>Area denial</li>
+                                <li>Stackable x5</li>
+                                <li>Craft: 2× Oil + 4× Metal</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Explosives Station level 2, crafting
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>Smoke Grenade</h3>
+                        <p class="item-desc">Tactical concealment</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Creates smoke screen</li>
+                                <li>Blocks vision</li>
+                                <li>Stackable x5</li>
+                                <li>Craft: 1× Canister + 2× Chemicals</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Utility Station level 1, crafting
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-explosion"></i></div>
+                        <h3>Wolfpack</h3>
+                        <p class="item-desc">Advanced multi-grenade</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Cluster explosion</li>
+                                <li>Massive damage</li>
+                                <li>Stackable x1</li>
+                                <li>Craft: 1× ARC Motion Core + 1× Explosive Compound</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Explosives Station level 3, elite crafting
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Items -->
+            <div class="resource-content" data-content="special">
+                <div class="items-grid">
+                    <div class="item-card">
+                        <span class="item-rarity uncommon">Uncommon</span>
+                        <div class="item-icon"><i class="fas fa-key"></i></div>
+                        <h3>Blue Gate Village Key</h3>
+                        <p class="item-desc">Unlocks Blue Gate locations</p>
+                        <div class="item-uses">
+                            <h4>Unlocks:</h4>
+                            <ul>
+                                <li>Blue Gate Cellar</li>
+                                <li>Blue Gate Communication Tower</li>
+                                <li>High-value loot rooms</li>
+                                <li>Cannot be recycled</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Blue Gate map, elite enemies
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-key"></i></div>
+                        <h3>Dam Control Tower Key</h3>
+                        <p class="item-desc">Access restricted Dam areas</p>
+                        <div class="item-uses">
+                            <h4>Unlocks:</h4>
+                            <ul>
+                                <li>Dam Control Tower</li>
+                                <li>Dam Testing Annex</li>
+                                <li>High-tier loot caches</li>
+                                <li>Cannot be recycled</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Dam map, hidden locations
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-key"></i></div>
+                        <h3>Stella Montis Archives Key</h3>
+                        <p class="item-desc">Elite facility access</p>
+                        <div class="item-uses">
+                            <h4>Unlocks:</h4>
+                            <ul>
+                                <li>Research archives</li>
+                                <li>Medical storage</li>
+                                <li>Legendary loot rooms</li>
+                                <li>Cannot be recycled</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Stella Montis, boss ARCs
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity rare">Rare</span>
+                        <div class="item-icon"><i class="fas fa-scroll"></i></div>
+                        <h3>Weapon Blueprint</h3>
+                        <p class="item-desc">Unlocks weapon crafting</p>
+                        <div class="item-uses">
+                            <h4>Types:</h4>
+                            <ul>
+                                <li>Ferro, Kettle, Rattler, Stitcher (Common)</li>
+                                <li>Arpeggio, Bettina, Renegade (Rare)</li>
+                                <li>Hullcracker (Epic)</li>
+                                <li>Must extract to learn</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Locked rooms, quest rewards
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-user"></i></div>
+                        <h3>Combat Mk. 3 (Aggressive)</h3>
+                        <p class="item-desc">Elite combat augment</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Enhanced combat performance</li>
+                                <li>Damage bonus</li>
+                                <li>Stackable x1</li>
+                                <li>Craft: 1× Advanced Electrical + 1× Processor</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Gear Bench level 3, elite loot
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-search"></i></div>
+                        <h3>Looting Mk. 3 (Survivor)</h3>
+                        <p class="item-desc">Advanced looting augment</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Increased loot quality</li>
+                                <li>Better drop rates</li>
+                                <li>Stackable x1</li>
+                                <li>Craft: 1× Advanced Electrical + 1× Processor</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Gear Bench level 3, crafting
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Tactical Mk. 3 (Defensive)</h3>
+                        <p class="item-desc">Elite defensive augment</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Improved damage resistance</li>
+                                <li>Shield bonus</li>
+                                <li>Stackable x1</li>
+                                <li>Craft: 1× Advanced Electrical + 1× Processor</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Gear Bench level 3, crafting
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity legendary">Legendary</span>
+                        <div class="item-icon"><i class="fas fa-trophy"></i></div>
+                        <h3>Acoustic Guitar</h3>
+                        <p class="item-desc">Rare collectible trinket</p>
+                        <div class="item-uses">
+                            <h4>Properties:</h4>
+                            <ul>
+                                <li>High value: 7,000 credits</li>
+                                <li>Recycles: 4× Metal Parts + 6× Wires</li>
+                                <li>Collection item</li>
+                                <li>Quick Use-Gadget</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Rare spawns, hidden caches
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-snowflake"></i></div>
+                        <h3>Breathtaking Snow Globe</h3>
+                        <p class="item-desc">Valuable trinket</p>
+                        <div class="item-uses">
+                            <h4>Properties:</h4>
+                            <ul>
+                                <li>High value: 7,000 credits</li>
+                                <li>Cannot be recycled</li>
+                                <li>Collection item</li>
+                                <li>Event exclusive</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Winter events, special locations
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-tape"></i></div>
+                        <h3>Lance's Mixtape (5th Edition)</h3>
+                        <p class="item-desc">Legendary collectible</p>
+                        <div class="item-uses">
+                            <h4>Properties:</h4>
+                            <ul>
+                                <li>Extremely high value: 10,000 credits</li>
+                                <li>Cannot be recycled</li>
+                                <li>Rare trinket</li>
+                                <li>Collection reward</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Hidden easter eggs, secret locations
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity epic">Epic</span>
+                        <div class="item-icon"><i class="fas fa-user-shield"></i></div>
+                        <h3>Photoelectric Cloak</h3>
+                        <p class="item-desc">Advanced stealth device</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Temporary invisibility</li>
+                                <li>Tactical advantage</li>
+                                <li>Stackable x1</li>
+                                <li>Craft: 1× Advanced Electrical + 1× Speaker</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Utility Station level 3, elite crafting
+                        </div>
+                    </div>
+
+                    <div class="item-card">
+                        <span class="item-rarity legendary">Legendary</span>
+                        <div class="item-icon"><i class="fas fa-link"></i></div>
+                        <h3>Snap Hook</h3>
+                        <p class="item-desc">Elite grappling device</p>
+                        <div class="item-uses">
+                            <h4>Effects:</h4>
+                            <ul>
+                                <li>Advanced mobility</li>
+                                <li>Vertical traversal</li>
+                                <li>Stackable x1</li>
+                                <li>Craft: 1× Power Rod + 3× Rope</li>
+                            </ul>
+                        </div>
+                        <div class="item-sources">
+                            <strong>Sources:</strong> Utility Station level 3, legendary crafting
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crafting System -->
+    <section class="crafting-system">
+        <div class="container">
+            <h2>Workshop Crafting Stations</h2>
+            <p class="section-subtitle">Upgrade stations to unlock advanced recipes</p>
+            
+            <div class="crafting-stations">
+                <div class="station-card">
+                    <div class="station-header">
+                        <i class="fas fa-hammer"></i>
+                        <h3>Workbench</h3>
+                    </div>
+                    <p>Basic crafting for weapons and ammo</p>
+                    <ul class="station-functions">
+                        <li><strong>Level 1:</strong> Basic weapons, all ammo types, shields, augments</li>
+                        <li><strong>Free Station:</strong> Available after 1 round played</li>
+                        <li><strong>Crafts:</strong> Ferro, Kettle, Rattler, Stitcher, Light/Medium/Heavy/Shotgun Ammo</li>
+                    </ul>
+                </div>
+
+                <div class="station-card">
+                    <div class="station-header">
+                        <i class="fas fa-crosshairs"></i>
+                        <h3>Gunsmith</h3>
+                    </div>
+                    <p>Weapon blueprints and modifications</p>
+                    <ul class="station-functions">
+                        <li><strong>Level 1:</strong> Basic weapon mods (grips, stocks, compensators)</li>
+                        <li><strong>Level 2:</strong> Arpeggio weapon + advanced mods</li>
+                        <li><strong>Level 3:</strong> Bettina, Renegade, Hullcracker + epic mods</li>
+                        <li><strong>Upgrade:</strong> 20× Metal + 30× Rubber → 3× Rusted Tools + 5× Mechanical + 8× Wasp Driver → 3× Rusted Gear + 5× Advanced Mechanical + 4× Sentinel Core</li>
+                    </ul>
+                </div>
+
+                <div class="station-card">
+                    <div class="station-header">
+                        <i class="fas fa-vest"></i>
+                        <h3>Gear Bench</h3>
+                    </div>
+                    <p>Shields and augments crafting</p>
+                    <ul class="station-functions">
+                        <li><strong>Level 1:</strong> Light/Medium shields, Mk. 1 augments</li>
+                        <li><strong>Level 2:</strong> Heavy shields, Mk. 2 augments</li>
+                        <li><strong>Level 3:</strong> Mk. 3 augments (Aggressive, Flanking, Cautious, Survivor, Defensive, Healing)</li>
+                        <li><strong>Upgrade:</strong> 25× Plastic + 30× Fabric → 3× Power Cable + 5× Electrical + 5× Hornet Driver → 3× Industrial Battery + 5× Advanced Electrical + 6× Bastion Cell</li>
+                    </ul>
+                </div>
+
+                <div class="station-card">
+                    <div class="station-header">
+                        <i class="fas fa-medkit"></i>
+                        <h3>Medical Lab</h3>
+                    </div>
+                    <p>Healing items and shield rechargers</p>
+                    <ul class="station-functions">
+                        <li><strong>Level 1:</strong> Herbal bandage, shield recharger, adrenaline shot, bandage</li>
+                        <li><strong>Level 2:</strong> Sterilized bandage, surge shield recharger</li>
+                        <li><strong>Level 3:</strong> Vita spray, vita shot</li>
+                        <li><strong>Upgrade:</strong> 50× Fabric + 6× ARC Alloy → 2× Cracked Bioscanner + 5× Durable Cloth + 8× Tick Pod → 3× Rusted Medical Kit + 8× Antiseptic + 5× Surveyor Vault</li>
+                    </ul>
+                </div>
+
+                <div class="station-card">
+                    <div class="station-header">
+                        <i class="fas fa-bomb"></i>
+                        <h3>Explosives Station</h3>
+                    </div>
+                    <p>Grenades and explosive devices</p>
+                    <ul class="station-functions">
+                        <li><strong>Level 1:</strong> Gas grenade, light impact grenade</li>
+                        <li><strong>Level 2:</strong> Blaze grenade, shrapnel grenade, snap blast grenade</li>
+                        <li><strong>Level 3:</strong> Heavy fuze grenade, explosive mine, wolfpack</li>
+                        <li><strong>Upgrade:</strong> 50× Chemicals + 6× ARC Alloy → 3× Synthesized Fuel + 5× Crude Explosives + 5× Pop Trigger → 3× Laboratory Reagents + 5× Explosive Compound + 3× Rocketeer Driver</li>
+                    </ul>
+                </div>
+
+                <div class="station-card">
+                    <div class="station-header">
+                        <i class="fas fa-toolbox"></i>
+                        <h3>Utility Station</h3>
+                    </div>
+                    <p>Gadgets and utility items</p>
+                    <ul class="station-functions">
+                        <li><strong>Level 1:</strong> Barricade kit, binoculars, door blocker, smoke grenade, remote raider flare</li>
+                        <li><strong>Level 2:</strong> Lure grenade, raider hatch key, zipline</li>
+                        <li><strong>Level 3:</strong> Photoelectric cloak, snap hook, tagging grenade</li>
+                        <li><strong>Upgrade:</strong> 50× Plastic + 6× ARC Alloy → 2× Damaged Heat Sink + 5× Electrical + 6× Snitch Scanner → 3× Fried Motherboard + 5× Advanced Electrical + 4× Leaper Pulse Unit</li>
+                    </ul>
+                </div>
+
+                <div class="station-card">
+                    <div class="station-header">
+                        <i class="fas fa-recycle"></i>
+                        <h3>Refiner</h3>
+                    </div>
+                    <p>Convert materials into refined components</p>
+                    <ul class="station-functions">
+                        <li><strong>Level 1:</strong> Crude explosives, durable cloth, electrical/mechanical components</li>
+                        <li><strong>Level 2:</strong> Advanced components, antiseptic, ARC circuitry, gun parts, mod components</li>
+                        <li><strong>Level 3:</strong> Magnetic accelerator, power rod</li>
+                        <li><strong>Upgrade:</strong> 60× Metal + 5× ARC Powercell → 3× Toaster + 5× ARC Motion Core + 8× Fireball Burner → 3× Motor + 10× ARC Circuitry + 6× Bombardier Cell</li>
+                    </ul>
+                </div>
+
+                <div class="station-card">
+                    <div class="station-header">
+                        <i class="fas fa-feather"></i>
+                        <h3>Scrappy (Passive)</h3>
+                    </div>
+                    <p>Rooster that generates basic materials</p>
+                    <ul class="station-functions">
+                        <li><strong>Free:</strong> Generates Metal, Fabric, Plastic, Chemicals, Rubber, Seeds</li>
+                        <li><strong>Levels 1-5:</strong> Upgrade for more materials per raid</li>
+                        <li><strong>Max Hold:</strong> 50× each material type</li>
+                        <li><strong>Tip:</strong> Spend 15+ minutes in raid for maximum rewards</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="crafting-example">
+                <h3>Example: Crafting Advanced Weapons</h3>
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <h4>Arpeggio (SMG)</h4>
+                        <span class="recipe-tier rare">Rare Tier</span>
+                    </div>
+                    <div class="recipe-requirements">
+                        <h5>Required Materials:</h5>
+                        <ul>
+                            <li><i class="fas fa-wrench"></i> Rusted Tools x3</li>
+                            <li><i class="fas fa-cog"></i> Mechanical Components x5</li>
+                            <li><i class="fas fa-drone"></i> Wasp Driver x8</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-station">
+                        <strong>Station Required:</strong> Gunsmith Level 2
+                    </div>
+                    <div class="recipe-time">
+                        <strong>Blueprint:</strong> Must find and extract blueprint first
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <h4>Wolfpack Grenade</h4>
+                        <span class="recipe-tier epic">Epic Tier</span>
+                    </div>
+                    <div class="recipe-requirements">
+                        <h5>Required Materials:</h5>
+                        <ul>
+                            <li><i class="fas fa-certificate"></i> ARC Motion Core x1</li>
+                            <li><i class="fas fa-bomb"></i> Explosive Compound x1</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-station">
+                        <strong>Station Required:</strong> Explosives Station Level 3
+                    </div>
+                    <div class="recipe-time">
+                        <strong>Effect:</strong> Cluster grenade with massive AoE damage
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="loot-tips">
+        <div class="container">
+            <h2>Pro Looting & Crafting Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-box">
+                    <i class="fas fa-key"></i>
+                    <h3>Prioritize Keys First</h3>
+                    <p>Keys like Dam Control Tower or Stella Montis Archives unlock high-tier loot rooms with blueprints and rare materials.</p>
+                </div>
+                <div class="tip-box">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Recycle Smart</h3>
+                    <p>Recycle items in Speranza for full materials. In-raid salvaging gives fewer resources but works in emergencies.</p>
+                </div>
+                <div class="tip-box">
+                    <i class="fas fa-scroll"></i>
+                    <h3>Extract Blueprints</h3>
+                    <p>Put blueprints in your Safe Pocket to guarantee extraction. They're one-time unlocks needed for workshop crafting.</p>
+                </div>
+                <div class="tip-box">
+                    <i class="fas fa-feather"></i>
+                    <h3>Upgrade Scrappy</h3>
+                    <p>Level up Scrappy for passive materials. Spend 15+ minutes in raid for maximum rewards - even if you don't extract!</p>
+                </div>
+                <div class="tip-box">
+                    <i class="fas fa-hammer"></i>
+                    <h3>Workshop Upgrade Path</h3>
+                    <p>Focus on Refiner first to craft advanced components, then Gunsmith for weapons, then Gear Bench for augments.</p>
+                </div>
+                <div class="tip-box">
+                    <i class="fas fa-robot"></i>
+                    <h3>Farm ARC Components</h3>
+                    <p>Kill specific ARCs for their parts: Wasp/Hornet Drivers, Bastion Cells, Sentinel Cores are needed for upgrades.</p>
+                </div>
+                <div class="tip-box">
+                    <i class="fas fa-users"></i>
+                    <h3>Team Coordination</h3>
+                    <p>Share materials and keys with squad. One person with Looting Mk. 3 augment benefits the whole team.</p>
+                </div>
+                <div class="tip-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>Balance Risk vs Reward</h3>
+                    <p>Locked rooms have the best loot but attract attention. Time your entry when ARCs are distracted or eliminated.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ARC<span>RAIDERS</span></h3>
+                    <p>Your ultimate guide to surviving the surface and mastering extraction.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="weapons.html">Weapons</a></li>
+                        <li><a href="arcs.html">ARCs</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                        <li><a href="guide.html">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="loot.html">Loot & Crafting</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="#">Tips & Tricks</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ARC Raiders Guide. Fan-made portfolio project by Nabil Jouarhy. All trademarks belong to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

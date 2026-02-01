@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARC Raiders - Official Guide & Database</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Disclaimer Modal -->
+    <div id="disclaimer-modal" class="disclaimer-modal" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+        <div class="disclaimer-content">
+            <h2 id="disclaimer-title">Disclaimer</h2>
+            <p>This website was created for fun / test purposes to showcase web development skills. It is not an official site and is not affiliated with the game's studio or developers.</p>
+            <div class="disclaimer-actions">
+                <button id="disclaimer-accept" class="btn btn-primary">Enter Site</button>
+                <button id="disclaimer-leave" class="btn btn-secondary">Leave</button>
+            </div>
+            <p class="disclaimer-note">By clicking "Enter Site" you acknowledge this is a community-made demo and not an official product.</p>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>ARC<span>RAIDERS</span></h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="weapons.html">Weapons</a></li>
+                <li><a href="arcs.html">ARCs</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="loot.html">Loot & Crafting</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="guide.html">Guide</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">ENLIST. RESIST.</h1>
+            <p class="hero-subtitle">Navigate the lethal surface. Extract valuable loot. Survive the machines.</p>
+            <div class="hero-buttons">
+                <a href="guide.html" class="btn btn-primary">Start Guide</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>An Extraction Adventure</h2>
+                <p>ARC Raiders is a multiplayer extraction shooter set in a lethal future Earth</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Tactical Combat</h3>
+                    <p>Face deadly machines and rival Raiders in intense extraction missions</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Immersive World</h3>
+                    <p>Explore post-apocalyptic Italy with stunning Unreal Engine 5 graphics</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Cross-Platform</h3>
+                    <p>Play with friends across PlayStation, Xbox, and PC seamlessly</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Loot & Extract</h3>
+                    <p>Scavenge valuable resources and extract before it's too late</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="quick-access">
+        <div class="container">
+            <div class="section-header">
+                <h2>Database</h2>
+                <p>Everything you need to dominate the surface</p>
+            </div>
+            <div class="quick-grid">
+                <a href="weapons.html" class="quick-card">
+                    <div class="quick-overlay"></div>
+                    <i class="fas fa-gun"></i>
+                    <h3>Weapons</h3>
+                    <p>Complete arsenal database</p>
+                </a>
+                <a href="arcs.html" class="quick-card">
+                    <div class="quick-overlay"></div>
+                    <i class="fas fa-robot"></i>
+                    <h3>ARCs</h3>
+                    <p>Know your enemy</p>
+                </a>
+                <a href="maps.html" class="quick-card">
+                    <div class="quick-overlay"></div>
+                    <i class="fas fa-map"></i>
+                    <h3>Maps</h3>
+                    <p>Strategic locations</p>
+                </a>
+                <a href="loot.html" class="quick-card">
+                    <div class="quick-overlay"></div>
+                    <i class="fas fa-box"></i>
+                    <h3>Loot</h3>
+                    <p>Resources & crafting</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News</h2>
+                <p>Stay updated with the latest from the battlefield</p>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://preview.redd.it/goalie-deck-completed-cant-wait-for-next-one-v0-discl6ecni9g1.png?auto=webp&s=edb720552e8f4a41199193df1d2c0990d3049b7b" alt="Free Raider Deck" loading="lazy">
+                        <span class="news-badge">Update</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">December 26, 2025</span>
+                        <h3>Free Raider Deck: The Goalie</h3>
+                        <p>New free content available for all Raiders. Unlock exclusive items and cosmetics.</p>
+                        <a href="news.html" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://vpesports.com/wp-content/uploads/2025/12/ARC-Raiders-Gets-Cold-Snap-Winter.png" alt="Cold Snap Tips" loading="lazy">
+                        <span class="news-badge">Tips</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">December 20, 2025</span>
+                        <h3>Cold Snap - Developer Tips</h3>
+                        <p>Master the new winter conditions with these expert tips from the development team.</p>
+                        <a href="news.html" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://preview.redd.it/new-patch-notes-v0-7ayz6x5hxlzf1.png?auto=webp&s=1561db2c052f1c902ece3210551262df178ab729" alt="Patch Notes" loading="lazy">
+                        <span class="news-badge">Patch</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">December 18, 2025</span>
+                        <h3>Patch Notes Hotfix - Dec 18</h3>
+                        <p>Latest fixes and improvements to enhance your raiding experience.</p>
+                        <a href="news.html" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="21">0</h3>
+                    <p>Weapons</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="14">0</h3>
+                    <p>ARC Types</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="5">0</h3>
+                    <p>Maps</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="400">0</h3>
+                    <p>Loot Items</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ARC<span>RAIDERS</span></h3>
+                    <p>Your ultimate guide to surviving the surface and mastering extraction.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="weapons.html">Weapons</a></li>
+                        <li><a href="arcs.html">ARCs</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                        <li><a href="guide.html">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="loot.html">Loot & Crafting</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="#">Tips & Tricks</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ARC Raiders Guide. Fan-made portfolio project by Nabil Jouarhy. All trademarks belong to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

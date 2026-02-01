@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Guide - ARC Raiders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>ARC<span>RAIDERS</span></h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weapons.html">Weapons</a></li>
+                <li><a href="arcs.html">ARCs</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="loot.html">Loot & Crafting</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="guide.html" class="active">Guide</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header guide-header">
+        <div class="page-overlay"></div>
+        <div class="container">
+            <h1>Raider's Handbook</h1>
+            <p>Your complete guide to surviving and thriving on the surface</p>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="guide-toc">
+        <div class="container">
+            <h2>Quick Navigation</h2>
+            <div class="toc-grid">
+                <a href="#getting-started" class="toc-item">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Getting Started</span>
+                </a>
+                <a href="#game-mechanics" class="toc-item">
+                    <i class="fas fa-cogs"></i>
+                    <span>Game Mechanics</span>
+                </a>
+                <a href="#combat-tips" class="toc-item">
+                    <i class="fas fa-crosshairs"></i>
+                    <span>Combat Tips</span>
+                </a>
+                <a href="#extraction" class="toc-item">
+                    <i class="fas fa-helicopter"></i>
+                    <span>Extraction Guide</span>
+                </a>
+                <a href="#loadouts" class="toc-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Loadouts</span>
+                </a>
+                <a href="#advanced" class="toc-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Advanced Tactics</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section id="getting-started" class="guide-section">
+        <div class="container">
+            <h2><i class="fas fa-play-circle"></i> Getting Started</h2>
+            
+            <div class="guide-content">
+                <h3>What is ARC Raiders?</h3>
+                <p>ARC Raiders is a multiplayer extraction shooter set in a post-apocalyptic future Earth. Your goal is to venture onto the dangerous surface, collect valuable loot, and extract safely before time runs out or you're eliminated by ARCs or other Raiders.</p>
+
+                <h3>Basic Controls (PC Default)</h3>
+                <div class="controls-grid">
+                    <div class="control-item">
+                        <kbd>W A S D</kbd>
+                        <span>Movement</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>SHIFT</kbd>
+                        <span>Sprint</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>CTRL</kbd>
+                        <span>Crouch</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>SPACE</kbd>
+                        <span>Jump</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>MOUSE 1</kbd>
+                        <span>Fire Weapon</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>MOUSE 2</kbd>
+                        <span>Aim Down Sights</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>R</kbd>
+                        <span>Reload</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>E</kbd>
+                        <span>Interact/Loot</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>TAB</kbd>
+                        <span>Inventory</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>M</kbd>
+                        <span>Map</span>
+                    </div>
+                </div>
+
+                <h3>Your First Match</h3>
+                <ol class="guide-list">
+                    <li><strong>Choose Your Map:</strong> Start with "The Blue Gate" - it's the most beginner-friendly location with lower ARC density.</li>
+                    <li><strong>Select Your Loadout:</strong> Begin with the basic assault rifle and pistol. Simple but effective.</li>
+                    <li><strong>Learn the Layout:</strong> Spend your first few matches exploring and learning landmark locations.</li>
+                    <li><strong>Loot Carefully:</strong> Don't be greedy. Take what you need and head to extraction.</li>
+                    <li><strong>Extract Successfully:</strong> Reach an extraction point and survive the timer to keep your loot.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Mechanics -->
+    <section id="game-mechanics" class="guide-section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-cogs"></i> Core Game Mechanics</h2>
+            
+            <div class="guide-content">
+                <div class="mechanic-card">
+                    <h3><i class="fas fa-clock"></i> Match Timer</h3>
+                    <p>Each match has a 20-minute timer. When time runs out, a deadly storm closes in, forcing all players to extraction points. Plan your looting route accordingly.</p>
+                </div>
+
+                <div class="mechanic-card">
+                    <h3><i class="fas fa-heart"></i> Health System</h3>
+                    <p>Your health is divided into segments. Damage depletes these segments, which can only be restored with medical items. Learn to heal strategically during safe moments.</p>
+                </div>
+
+                <div class="mechanic-card">
+                    <h3><i class="fas fa-running"></i> Stamina Management</h3>
+                    <p>Sprinting, jumping, and climbing consume stamina. Running out of stamina leaves you vulnerable. Manage it carefully during combat and exploration.</p>
+                </div>
+
+                <div class="mechanic-card">
+                    <h3><i class="fas fa-box"></i> Inventory System</h3>
+                    <p>Limited inventory space means you must prioritize valuable loot. Backpacks increase capacity but are rare. Decide what's worth keeping.</p>
+                </div>
+
+                <div class="mechanic-card">
+                    <h3><i class="fas fa-shield-alt"></i> Armor System</h3>
+                    <p>Armor protects you from damage but degrades with use. Always carry spare plates or repair kits. Higher tier armor provides better protection.</p>
+                </div>
+
+                <div class="mechanic-card">
+                    <h3><i class="fas fa-volume-up"></i> Sound Design</h3>
+                    <p>Footsteps, gunfire, and ARC sounds are crucial. Use headphones. Listen for audio cues to detect enemies and threats before seeing them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combat Tips -->
+    <section id="combat-tips" class="guide-section">
+        <div class="container">
+            <h2><i class="fas fa-crosshairs"></i> Combat Tips & Tactics</h2>
+            
+            <div class="tips-columns">
+                <div class="tips-column">
+                    <h3>Against ARCs</h3>
+                    <ul class="styled-list">
+                        <li><i class="fas fa-check-circle"></i> Always aim for weak points (glowing sections)</li>
+                        <li><i class="fas fa-check-circle"></i> Use cover extensively - ARCs have aimbot-level accuracy</li>
+                        <li><i class="fas fa-check-circle"></i> EMP weapons disable ARCs temporarily</li>
+                        <li><i class="fas fa-check-circle"></i> Stealth kills on Scout ARCs prevent alerts</li>
+                        <li><i class="fas fa-check-circle"></i> Heavy ARCs require team focus fire</li>
+                        <li><i class="fas fa-check-circle"></i> Learn ARC patrol patterns to avoid unnecessary fights</li>
+                        <li><i class="fas fa-check-circle"></i> Explosives deal massive damage to armored units</li>
+                    </ul>
+                </div>
+
+                <div class="tips-column">
+                    <h3>Against Other Raiders</h3>
+                    <ul class="styled-list">
+                        <li><i class="fas fa-check-circle"></i> Listen for footsteps and gunfire</li>
+                        <li><i class="fas fa-check-circle"></i> High ground advantage is crucial</li>
+                        <li><i class="fas fa-check-circle"></i> Use grenades to flush out campers</li>
+                        <li><i class="fas fa-check-circle"></i> Strafe during gunfights to avoid shots</li>
+                        <li><i class="fas fa-check-circle"></i> Communicate with your squad constantly</li>
+                        <li><i class="fas fa-check-circle"></i> Choose your battles - not every fight is worth it</li>
+                        <li><i class="fas fa-check-circle"></i> Third-party fights when possible</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="combat-strategies">
+                <h3>Engagement Strategies</h3>
+                <div class="strategy-grid">
+                    <div class="strategy-card">
+                        <h4>Aggressive Push</h4>
+                        <p><strong>When:</strong> You have superior numbers or position</p>
+                        <p><strong>How:</strong> Use smokes/flashbangs, push together, overwhelm with firepower</p>
+                        <p><strong>Risk:</strong> High - can backfire if ambushed</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h4>Defensive Hold</h4>
+                        <p><strong>When:</strong> You're outnumbered or in a strong position</p>
+                        <p><strong>How:</strong> Use cover, set up crossfires, force enemies to push</p>
+                        <p><strong>Risk:</strong> Medium - can get flanked</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h4>Tactical Retreat</h4>
+                        <p><strong>When:</strong> Fight isn't going well or storm approaching</p>
+                        <p><strong>How:</strong> Suppress enemies, use smokes, reposition strategically</p>
+                        <p><strong>Risk:</strong> Low - survival is priority</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extraction Guide -->
+    <section id="extraction" class="guide-section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-helicopter"></i> Extraction Guide</h2>
+            
+            <div class="guide-content">
+                <h3>Understanding Extraction</h3>
+                <p>Extraction is the only way to keep your looted items. Each map has multiple extraction points, but they come with risks.</p>
+
+                <div class="extraction-types">
+                    <div class="extraction-card">
+                        <div class="extraction-icon safe"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Safe Extractions</h4>
+                        <ul>
+                            <li>Always available</li>
+                            <li>60-second timer</li>
+                            <li>Heavily contested by other Raiders</li>
+                            <li>Examples: Main Extraction, Emergency Evac</li>
+                        </ul>
+                    </div>
+
+                    <div class="extraction-card">
+                        <div class="extraction-icon risky"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Risky Extractions</h4>
+                        <ul>
+                            <li>Sometimes available (check timer)</li>
+                            <li>30-second timer</li>
+                            <li>Less contested but unpredictable</li>
+                            <li>Examples: Side Routes, Hidden Paths</li>
+                        </ul>
+                    </div>
+
+                    <div class="extraction-card">
+                        <div class="extraction-icon premium"><i class="fas fa-star"></i></div>
+                        <h4>Premium Extractions</h4>
+                        <ul>
+                            <li>Requires payment or special item</li>
+                            <li>15-second timer</li>
+                            <li>Rarely contested</li>
+                            <li>Examples: Helicopter, Private Vehicle</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Extraction Survival Tips</h3>
+                <ol class="guide-list">
+                    <li><strong>Clear the Area:</strong> Check for campers before committing to extraction</li>
+                    <li><strong>Watch Your Back:</strong> Face away from the extraction point to see approaching threats</li>
+                    <li><strong>Use Cover:</strong> Stay in cover during the timer countdown</li>
+                    <li><strong>Team Coordination:</strong> Have squadmates watch different angles</li>
+                    <li><strong>Backup Plans:</strong> Always know where alternative extractions are</li>
+                    <li><strong>Timing Matters:</strong> Late extractions (15-20 min) are safer but riskier due to storm</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loadouts -->
+    <section id="loadouts" class="guide-section">
+        <div class="container">
+            <h2><i class="fas fa-shield-alt"></i> Recommended Loadouts</h2>
+            
+            <div class="loadouts-grid">
+                <div class="loadout-card">
+                    <div class="loadout-header beginner">
+                        <h3>Beginner Balanced</h3>
+                        <span class="cost">Low Cost</span>
+                    </div>
+                    <div class="loadout-items">
+                        <div class="loadout-item">
+                            <i class="fas fa-gun"></i>
+                            <div>
+                                <strong>Primary:</strong> Kettle
+                                <p>Common assault rifle: versatile and easy to control</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-gun"></i>
+                            <div>
+                                <strong>Secondary:</strong> Anvil
+                                <p>Reliable pistol for close encounters</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-vest"></i>
+                            <div>
+                                <strong>Armor:</strong> Light Armor (Level 2)
+                                <p>Good protection-to-cost ratio</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-backpack"></i>
+                            <div>
+                                <strong>Gear:</strong> Sterilized Bandage x3, Blaze Grenade x2
+                                <p>Essential healing and basic grenades</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loadout-card">
+                    <div class="loadout-header aggressive">
+                        <h3>CQB Rusher</h3>
+                        <span class="cost">Medium Cost</span>
+                    </div>
+                    <div class="loadout-items">
+                        <div class="loadout-item">
+                            <i class="fas fa-gun"></i>
+                            <div>
+                                <strong>Primary:</strong> Stitcher
+                                <p>High fire-rate SMG for close-quarters dominance</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-gun"></i>
+                            <div>
+                                <strong>Secondary:</strong> Vulcano
+                                <p>Devastating shotgun for room clearing</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-vest"></i>
+                            <div>
+                                <strong>Armor:</strong> Light Armor (Level 3)
+                                <p>Mobility-focused protection</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-backpack"></i>
+                            <div>
+                                <strong>Gear:</strong> Blaze Grenade x3, Vita Spray x2
+                                <p>Offensive grenades and quick healing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loadout-card">
+                    <div class="loadout-header sniper">
+                        <h3>Long Range Support</h3>
+                        <span class="cost">High Cost</span>
+                    </div>
+                    <div class="loadout-items">
+                        <div class="loadout-item">
+                            <i class="fas fa-crosshairs"></i>
+                            <div>
+                                <strong>Primary:</strong> HullCracker
+                                <p>Elite sniper with extreme long-range precision</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-gun"></i>
+                            <div>
+                                <strong>Secondary:</strong> Ferro
+                                <p>Reliable backup assault rifle for mid-range defense</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-vest"></i>
+                            <div>
+                                <strong>Armor:</strong> Light Armor (Level 2)
+                                <p>Balanced protection for supporting roles</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-backpack"></i>
+                            <div>
+                                <strong>Gear:</strong> Range Finder, Smokes x3
+                                <p>Support and recon tools</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loadout-card">
+                    <div class="loadout-header tank">
+                        <h3>Heavy Tank</h3>
+                        <span class="cost">Very High Cost</span>
+                    </div>
+                    <div class="loadout-items">
+                        <div class="loadout-item">
+                            <i class="fas fa-gun"></i>
+                            <div>
+                                <strong>Primary:</strong> Jupiter
+                                <p>Legendary high-damage assault for heavy engagements</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-gun"></i>
+                            <div>
+                                <strong>Secondary:</strong> Anvil
+                                <p>Powerful sidearm for close-range follow-ups</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-vest"></i>
+                            <div>
+                                <strong>Armor:</strong> Heavy Shield / Level 4 Protection
+                                <p>Maximum survivability for front-line play</p>
+                            </div>
+                        </div>
+                        <div class="loadout-item">
+                            <i class="fas fa-backpack"></i>
+                            <div>
+                                <strong>Gear:</strong> Vita Spray x3, Surge Shield Recharger
+                                <p>Top-tier healing and shield support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Tactics -->
+    <section id="advanced" class="guide-section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-graduation-cap"></i> Advanced Tactics</h2>
+            
+            <div class="guide-content">
+                <div class="advanced-section">
+                    <h3>Sound Management</h3>
+                    <p>Master audio to gain the upper hand:</p>
+                    <ul class="styled-list">
+                        <li><i class="fas fa-volume-down"></i> Walk instead of run in contested areas</li>
+                        <li><i class="fas fa-door-closed"></i> Close doors behind you to hear intruders</li>
+                        <li><i class="fas fa-headphones"></i> Use directional audio to pinpoint enemies</li>
+                        <li><i class="fas fa-microphone-slash"></i> Use suppressed weapons when sniping</li>
+                    </ul>
+                </div>
+
+                <div class="advanced-section">
+                    <h3>Map Knowledge Exploitation</h3>
+                    <ul class="styled-list">
+                        <li><i class="fas fa-map-marked-alt"></i> Learn all loot spawn locations</li>
+                        <li><i class="fas fa-route"></i> Memorize efficient looting routes</li>
+                        <li><i class="fas fa-eye"></i> Know common camping spots</li>
+                        <li><i class="fas fa-running"></i> Use shortcuts and hidden passages</li>
+                        <li><i class="fas fa-mountain"></i> Control high-ground positions</li>
+                    </ul>
+                </div>
+
+                <div class="advanced-section">
+                    <h3>Economy Management</h3>
+                    <ul class="styled-list">
+                        <li><i class="fas fa-coins"></i> Don't risk expensive loadouts on risky runs</li>
+                        <li><i class="fas fa-balance-scale"></i> Balance risk versus reward</li>
+                        <li><i class="fas fa-chart-line"></i> Build your stash gradually</li>
+                        <li><i class="fas fa-sync-alt"></i> Reinvest profits into better gear</li>
+                        <li><i class="fas fa-piggy-bank"></i> Keep a safety fund for bad streaks</li>
+                    </ul>
+                </div>
+
+                <div class="advanced-section">
+                    <h3>Team Coordination</h3>
+                    <ul class="styled-list">
+                        <li><i class="fas fa-comments"></i> Constant callouts - enemy positions, loot, threats</li>
+                        <li><i class="fas fa-users-cog"></i> Assign roles (point man, support, sniper)</li>
+                        <li><i class="fas fa-share-alt"></i> Share loot based on loadout needs</li>
+                        <li><i class="fas fa-hand-paper"></i> Never split up unless absolutely necessary</li>
+                        <li><i class="fas fa-shield-alt"></i> Revive teammates - four guns better than two</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Reference -->
+    <section class="quick-reference">
+        <div class="container">
+            <h2>Quick Reference Card</h2>
+            <div class="reference-grid">
+                <div class="ref-card">
+                    <h3>Before Match</h3>
+                    <ul>
+                        <li>✓ Check loadout durability</li>
+                        <li>✓ Bring healing items</li>
+                        <li>✓ Select appropriate map</li>
+                        <li>✓ Coordinate with team</li>
+                    </ul>
+                </div>
+                <div class="ref-card">
+                    <h3>During Match</h3>
+                    <ul>
+                        <li>✓ Stay aware of timer</li>
+                        <li>✓ Listen constantly</li>
+                        <li>✓ Manage inventory</li>
+                        <li>✓ Pick your battles</li>
+                    </ul>
+                </div>
+                <div class="ref-card">
+                    <h3>Before Extraction</h3>
+                    <ul>
+                        <li>✓ Check extraction status</li>
+                        <li>✓ Clear the area</li>
+                        <li>✓ Have backup plan</li>
+                        <li>✓ Team ready to cover</li>
+                    </ul>
+                </div>
+                <div class="ref-card">
+                    <h3>After Match</h3>
+                    <ul>
+                        <li>✓ Sort valuable loot</li>
+                        <li>✓ Repair equipment</li>
+                        <li>✓ Sell duplicates</li>
+                        <li>✓ Plan next loadout</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ARC<span>RAIDERS</span></h3>
+                    <p>Your ultimate guide to surviving the surface and mastering extraction.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="weapons.html">Weapons</a></li>
+                        <li><a href="arcs.html">ARCs</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                        <li><a href="guide.html">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="loot.html">Loot & Crafting</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="#">Tips & Tricks</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ARC Raiders Guide. Fan-made portfolio project by Nabil Jouarhy. All trademarks belong to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

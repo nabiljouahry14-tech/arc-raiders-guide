@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - ARC Raiders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>ARC<span>RAIDERS</span></h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weapons.html">Weapons</a></li>
+                <li><a href="arcs.html">ARCs</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="loot.html">Loot & Crafting</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="guide.html">Guide</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header news-header">
+        <div class="page-overlay"></div>
+        <div class="container">
+            <h1>Latest News & Updates</h1>
+            <p>Stay informed with the latest patches, events, and community updates</p>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="featured-news">
+        <div class="container">
+            <div class="featured-article">
+                <span class="featured-badge">Featured</span>
+                <div class="featured-content">
+                    <span class="news-date"><i class="far fa-calendar"></i> January 9, 2026</span>
+                    <h2>Season 2: Frozen Frontier Begins</h2>
+                    <p>Experience the most ambitious update yet with new winter-themed content, challenging weather conditions, and exclusive seasonal rewards. The Frozen Frontier brings new ARCs, weapons, and a completely new area to explore.</p>
+                    <div class="news-tags">
+                        <span class="tag">Season</span>
+                        <span class="tag">Content Update</span>
+                        <span class="tag">Event</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">Read Full Article</a>
+                </div>
+                <div class="featured-image">
+                    <i class="fas fa-snowflake"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-articles">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All News</button>
+                <button class="filter-btn" data-filter="updates">Updates</button>
+                <button class="filter-btn" data-filter="patches">Patches</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="community">Community</button>
+            </div>
+
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="news-article-card" data-category="updates">
+                    <div class="article-image">
+                        <i class="fas fa-gift"></i>
+                        <span class="article-badge updates">Update</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> December 26, 2025</span>
+                        <h3>Free Raider Deck: The Goalie</h3>
+                        <p>Celebrate the holidays with a brand new free Raider Deck! The Goalie set includes exclusive cosmetics, emotes, and a unique charm. Available for all players who log in before January 31st.</p>
+                        <div class="article-footer">
+                            <span class="read-time"><i class="far fa-clock"></i> 3 min read</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="news-article-card" data-category="updates">
+                    <div class="article-image">
+                        <i class="fas fa-snowflake"></i>
+                        <span class="article-badge updates">Tips & Tricks</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> December 20, 2025</span>
+                        <h3>Cold Snap - Developer Tips & Tricks</h3>
+                        <p>The development team shares their expert strategies for surviving the new Cold Snap weather condition. Learn how to use the weather to your advantage and master winter survival mechanics.</p>
+                        <div class="article-footer">
+                            <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="news-article-card" data-category="patches">
+                    <div class="article-image">
+                        <i class="fas fa-wrench"></i>
+                        <span class="article-badge patches">Patch Notes</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> December 18, 2025</span>
+                        <h3>Hotfix Patch - December 18</h3>
+                        <p>Critical fixes addressing server stability, weapon balance adjustments, and several quality-of-life improvements based on community feedback. Full patch notes available inside.</p>
+                        <div class="article-footer">
+                            <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="news-article-card" data-category="community">
+                    <div class="article-image">
+                        <i class="fas fa-heart"></i>
+                        <span class="article-badge community">Community</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> December 18, 2025</span>
+                        <h3>Thank You, Raiders!</h3>
+                        <p>A heartfelt message from the team celebrating the amazing ARC Raiders community. Plus, 1000 free Raider Tokens for all active players as a thank you for your continued support!</p>
+                        <div class="article-footer">
+                            <span class="read-time"><i class="far fa-clock"></i> 2 min read</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="news-article-card" data-category="patches">
+                    <div class="article-image">
+                        <i class="fas fa-code-branch"></i>
+                        <span class="article-badge patches">Patch Notes</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> December 12, 2025</span>
+                        <h3>Version 1.2.0 Patch Notes</h3>
+                        <p>Major update introducing weapon balancing, new ARCs, map improvements for Dam Battlegrounds, and the highly requested spectator mode. Full details on all changes and additions.</p>
+                        <div class="article-footer">
+                            <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="news-article-card" data-category="events">
+                    <div class="article-image">
+                        <i class="fas fa-trophy"></i>
+                        <span class="article-badge events">Event</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> December 5, 2025</span>
+                        <h3>Winter Championship Announced</h3>
+                        <p>Join the first official ARC Raiders competitive tournament! $100,000 prize pool, professional casting, and exclusive in-game rewards for participants. Registration opens December 15th.</p>
+                        <div class="article-footer">
+                            <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="news-article-card" data-category="updates">
+                    <div class="article-image">
+                        <i class="fas fa-map"></i>
+                        <span class="article-badge updates">Content</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> November 28, 2025</span>
+                        <h3>New Map: Stella Montis Deep Dive</h3>
+                        <p>Developer walkthrough of the newest map addition. Learn about the design philosophy, hidden secrets, and strategic considerations for the mountainous Stella Montis region.</p>
+                        <div class="article-footer">
+                            <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="news-article-card" data-category="community">
+                    <div class="article-image">
+                        <i class="fas fa-users"></i>
+                        <span class="article-badge community">Community</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> November 22, 2025</span>
+                        <h3>Community Spotlight: November</h3>
+                        <p>Featuring amazing fan art, incredible plays, and inspiring stories from the ARC Raiders community. Plus, winners of the November screenshot contest revealed!</p>
+                        <div class="article-footer">
+                            <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="news-article-card" data-category="events">
+                    <div class="article-image">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="article-badge events">Event</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> November 15, 2025</span>
+                        <h3>Double XP Weekend Returns</h3>
+                        <p>Level up twice as fast this weekend! Plus, increased legendary drop rates and special time-limited challenges with exclusive rewards. Event runs November 17-19.</p>
+                        <div class="article-footer">
+                            <span class="read-time"><i class="far fa-clock"></i> 3 min read</span>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <i class="fas fa-envelope"></i>
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest news, patch notes, and exclusive content delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ARC<span>RAIDERS</span></h3>
+                    <p>Your ultimate guide to surviving the surface and mastering extraction.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="weapons.html">Weapons</a></li>
+                        <li><a href="arcs.html">ARCs</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                        <li><a href="guide.html">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="loot.html">Loot & Crafting</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="#">Tips & Tricks</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ARC Raiders Guide. Fan-made portfolio project by Nabil Jouarhy. All trademarks belong to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
